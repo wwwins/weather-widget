@@ -1,71 +1,64 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Weather Widget</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,700" rel="stylesheet">
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
-  <link rel='stylesheet prefetch' href='css/oprnrv.css'>
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.css'>
-  <link rel="stylesheet" href="css/style.css">
-  <script src="https://use.fontawesome.com/20df5cf3d4.js"></script>
+    <meta charset="UTF-8">
+    <title>Weather Widget</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:300,700" rel="stylesheet">
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'>
+    <link rel='stylesheet prefetch' href='css/oprnrv.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://use.fontawesome.com/20df5cf3d4.js"></script>
 </head>
+
 <body>
-	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-	<script  src="js/index.js"></script>
-	<!-- Status Bar -->
-	<div id="status">
-		<p></p>
-		<button class="close"><i class="fa fa-times" aria-hidden="true"></i></button>
-	</div>
-	<!-- Current Weather -->
-	<div id="current" class="wrapper">
-		<nav>
-      <!--
-			<button id="locateBtn">
-				<i class="fa fa-location-arrow" aria-hidden="true"></i>
-			</button>
-			<button id="unitBtn" data-units="f">f</button>
-      -->
-		</nav>
-		<h1 class="location">Taipei, TPE</h1>
-		<h2 class="date">Sunday, January 1, 2017</h2>
-		<div class="weatherIcon">
-      <i class="fa-5x wi wi-wu-clear"></i>
-	</div>
-		<p class="temp">72</p>
-		<p class="conditions">Sunny</p>
-	</div>
-	<!-- Future Forecast -->
-	<div id="future" class="wrapper">
-		<div class="container">
-			<h3 class="day">Mon</h3>
-			<div class="weatherIcon">
-        <i class="fa-5x wi wi-wu-partlycloudy"></i>
-			</div>
-			<p class="conditions">Partly Cloudy</p>
-			<p class="tempRange"><span class="high">64</span> | <span class="low">48</span></p>
-		</div>
-		<div class="container">
-			<h3 class="day">Tue</h3>
-			<div class="weatherIcon">
-        <i class="fa-5x wi wi-wu-mostlycloudy"></i>
-			</div>
-			<p class="conditions">Mostly Cloudy</p>
-			<p class="tempRange"><span class="high">57</span> | <span class="low">45</span></p>
-		</div>
-		<div class="container">
-			<h3 class="day">Wed</h3>
-			<div class="weatherIcon">
-        <i class="fa-5x wi wi-wu-rain"></i>
-			</div>
-			<p class="conditions">Chance of Rain</p>
-			<p class="tempRange"><span class="high">63</span> | <span class="low">59</span></p>
-		</div>
-	</div>
-	<footer>
-		<p id="lastUpdated">Last updated at 12:00pm</p>
-	</footer>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src="js/index.js"></script>
+   <!-- Current Weather -->
+    <div id="current" class="wrapper">
+      <h1 class="location">Taipei, TPE</h1>
+        <h2 class="date">Sunday, January 1, 2017</h2>
+        <div class="weatherIcon">
+            <i class="fa-5x wi wi-wu-clear"></i>
+        </div>
+        <p class="temp">72</p>
+        <p class="conditions">Sunny</p>
+    </div>
+    <!-- Future Forecast -->
+    <div id="future" class="wrapper">
+        <div class="container">
+            <h3 class="day">Mon</h3>
+            <div class="weatherIcon">
+                <i class="fa-5x wi wi-wu-partlycloudy"></i>
+            </div>
+            <p class="conditions">Partly Cloudy</p>
+            <p class="tempRange"><span class="high">64</span> | <span class="low">48</span>
+            </p>
+        </div>
+        <div class="container">
+            <h3 class="day">Tue</h3>
+            <div class="weatherIcon">
+                <i class="fa-5x wi wi-wu-mostlycloudy"></i>
+            </div>
+            <p class="conditions">Mostly Cloudy</p>
+            <p class="tempRange"><span class="high">57</span> | <span class="low">45</span>
+            </p>
+        </div>
+        <div class="container">
+            <h3 class="day">Wed</h3>
+            <div class="weatherIcon">
+                <i class="fa-5x wi wi-wu-rain"></i>
+            </div>
+            <p class="conditions">Chance of Rain</p>
+            <p class="tempRange"><span class="high">63</span> | <span class="low">59</span>
+            </p>
+        </div>
+    </div>
+    <footer>
+        <p id="lastUpdated">Last updated at 12:00pm</p>
+    </footer>
 </body>
+
 </html>

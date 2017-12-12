@@ -111,30 +111,7 @@ $(document).ready(function () {
 			$(this).find('.low').html(forecast[index][units].low);
 		});
 	}
-	
-	// ------------
-	// Status Bar
-	// ------------
-	var $statusBar = $('#status');
-	
-	function showStatus(statusType, message) {
-		var $statusText = $statusBar.children('p');
-		var icon = '';
-		// Set icon based on statusType
-		if (statusType === 'error') {
-			icon = '<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>';
-		} else if (statusType === 'success') {
-			icon = '<i class="fa fa-check-circle" aria-hidden="true"></i>';
-		}
-		// Set status class, icon, text, and open animation
-		$statusText.html(icon + message);
-		$statusBar.attr('class', statusType).slideDown('fast');
-	}
-	// Status bar close animation
-	$statusBar.children('.close').on('click', function() {
-		$statusBar.slideUp('fast'); // Slide up animation
-	});
-	
+
 	// ---------------
 	// Misc Functions
 	// ---------------
