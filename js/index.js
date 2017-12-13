@@ -24,11 +24,12 @@ $(document).ready(function() {
 					function(data) {
 							data.result.forEach(
 									function(r) {
-											if (r.Id == my_id)
-													var myName = r.SchoolName;
-											var myTempe = r.Tempe;
-											$('#current .location').html(myName);
-											$('#current .temp').html(myTempe);
+											if (r.Id == my_id) {
+												var myName = r.SchoolName;
+												var myTempe = r.Tempe;
+												$('#current .location').html(myName);
+												$('#current .temp').html(myTempe);
+											}
 									}
 							)
 					}
